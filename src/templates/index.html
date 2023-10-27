@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Restaurant Apps</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
+  </head>
+  <body>
+    <a tabindex="0" href="#maincontent" class="skip-link">Skip to content</a>
+    <header>
+      <div class="logo"><i class="fas fa-utensils"></i>restowFind.</div>
+      <div class="icons">
+        <button aria-label="Menu navbar" class="fas fa-bars" id="menu-btn"></button>
+        <nav class="navbar" id="navigationDrawer">
+          <a href="./" class="active">home</a>
+          <a href="#">favorite</a>
+          <a href="https://www.linkedin.com/in/afifa-wulandari/">about</a>
+          <button aria-label="Search Button" class="fas fa-search" id="search-btn"></button>
+        </nav>
+      </div>
+      <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search" />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+    </header>
+
+    <section class="home" id="home">
+      <div tabindex="0" class="content">
+        <h3>get <span>30% OFF</span></h3>
+        <p>
+          Discover culinary delights at RestoApps with ease in making reservations to Elevate Your Dining Experience!
+        </p>
+        <button href="#order" class="btn">reserve</button>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h1 tabindex="0" class="heading">why <span>choose us</span></h1>
+      <div class="row">
+        <div class="image">
+          <img src="../public/images/heros/hero-image_2.jpg" alt="hero-image_2" />
+        </div>
+        <div class="content">
+          <h2>best system reservations</h2>
+          <p>
+            we have the best reservation system because we respond quickly, payment methods are easy for users and of course 100% safe and trusted!
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
+            cumque assumenda vel laudantium nulla nisi.
+          </p>
+          <div class="icons-container">
+            <div tabindex="0" class="icons">
+              <i class="fas fa-check-double"></i>
+              <span>trusted</span>
+            </div>
+            <div tabindex="0" class="icons">
+              <i class="fas fa-dollar-sign"></i>
+              <span>easy payment</span>
+            </div>
+            <div tabindex="0" class="icons">
+              <i class="fas fa-headset"></i>
+              <span>24/7 service</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main id="maincontent"> </main>
+
+    <section class="order" id="order">
+      <h1 tabindex="0" class="heading"><span>reserve</span> now</h1>
+      <div class="row">
+        <div class="image">
+          <img src="../public/images/heros/hero-image_1.jpg" alt="" />
+        </div>
+        <form action="">
+          <div class="inputBox">
+            <input type="text" placeholder="Full Name" required />
+            <input type="email" placeholder="example@gmial.com" required />
+          </div>
+          <div class="inputBox">
+            <input type="number" placeholder="Number" required />
+            <input type="text" placeholder="Restaurant Name" required />
+          </div>
+          <textarea tabindex="0"
+            placeholder="Address"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+          <button class="btn">reserve</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer" id="footer">
+      <div tabindex="0" class="credit">
+        ©copyright @2023 <span>RestowFind</span>
+      </div>
+    </footer>
+
+    <aside>
+        <a tabindex="0" href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+    </aside>
+  </body>
+</html>
