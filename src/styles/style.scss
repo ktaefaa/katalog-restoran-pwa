@@ -1,0 +1,106 @@
+$purple: #d067de;
+$black: #130f40;
+$light: #666;
+$box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+
+.box {
+  margin: 1rem;
+  background-color: #fff;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: $box-shadow;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+
+  .image {
+    height: 40rem;
+    width: 100%;
+    padding: 1.5rem;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      height: 100%;
+      width: 100%;
+      border-radius: 0.5rem;
+      -webkit-border-radius: 0.5rem;
+      -moz-border-radius: 0.5rem;
+      -ms-border-radius: 0.5rem;
+      -o-border-radius: 0.5rem;
+      animation: float 3s linear infinite;
+      -webkit-animation: float 3s linear infinite;
+    }
+
+    .fa-heart {
+      position: absolute;
+      top: 2.5rem;
+      right: 2.5rem;
+      height: 44px;
+      width: 44px;
+      line-height: 5rem;
+      font-size: 2rem;
+      text-align: center;
+      background-color: #fff;
+      color: $black;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+
+      &:hover {
+        background-color: $purple;
+        color: #fff;
+      }
+    }
+  }
+
+  .content {
+    padding: 0 2rem 2rem 2rem;
+
+    h3 {
+      color: $black;
+      font-size: 2.5rem;
+    }
+
+    h4 {
+      color: $purple;
+      font-size: 2rem;
+    }
+
+    p {
+      color: $light;
+      font-size: 1.6rem;
+      max-height: 12rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+    }
+
+    span {
+      color: $purple;
+      margin-left: 1rem;
+      font-size: 2rem;
+    }
+  }
+}
+
+button:focus {
+  outline: 3px solid $purple;
+}
+
+h3:focus {
+  outline: 3px solid $purple;
+}
+
+@media screen and (max-width: 450px) {
+  h3 {
+    font-size: 50%;
+  }
+  h4 {
+    font-size: 50%;
+  }
+}
